@@ -9,9 +9,10 @@ from importlib import import_module
 from sys import argv
 
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from userbot import LOGS, bot
+from userbot import LOGS, bot, BOT_VERSION
 from userbot.modules import ALL_MODULES
 
+VERSION = str(BOT_VERSION)
 
 INVALID_PH = '\nERROR: The Phone No. entered is INVALID' \
              '\n Tip: Use Country Code along with number.' \
@@ -26,12 +27,10 @@ except PhoneNumberInvalidError:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info("You are running OpenUserBot [v7.7.7]")
+LOGS.info(f"You're now running SilontUserbot v{VERSION}")
 
 LOGS.info(
-    "😘 Congratulations, your SilontUserbot is now running !! Test it by typing .ping in any chat 😘."
-    "Once died 😵, but now ON again 😉, A BIG thanks to https://github.com/Devp73 Dev Patel who have helped make this userbot ON AGAIN with his HUGE FIX!!"
-    "for command list type .help & If you need assistance, head to https://t.me/PPE_Support")
+    "😘 Congratulations, your SilontUserbot is now running !! Test it by typing .ping in any chat.")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
