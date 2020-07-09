@@ -22,9 +22,12 @@ heroku3>=3.4.0
 asyncurban
 httplib2>=0.18.0
 psutil
+html_telegraph_poster
 humanize
+jikanpy
 lxml
 oauth2client
+pendulum
 Pillow>=6.0.0
 psycopg2
 psycopg2-binary
