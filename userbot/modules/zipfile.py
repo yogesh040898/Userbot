@@ -156,6 +156,6 @@ CMD_HELP.update({
             \nUsage: add files to zip list.\
             \n`.upzip` **[optional: <zip title>]**\
             \nUsage: upload zip list.\
-            \n`.rmzip` **[optional: <zip title>]**\
+            \n`.rmzip` \
             \nUsage: clear zip list."
 })
