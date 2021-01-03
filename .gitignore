@@ -11,3 +11,4 @@ uniborg/__pycache__/*
 .progress
 .vscode/*
 bin/*
+downloads/
